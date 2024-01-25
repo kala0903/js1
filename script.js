@@ -1,127 +1,67 @@
-// 1
-let num = 5;
+'use strict';
+//1
+const numbers = [10, 50, 6, 7, 8, 11, 6, 3, 9]
+let sum1 = 0;
+numbers.forEach(numb => sum1 +=numb);
+console.log(sum1);
 
-while(true){
-    num++;
-    if(num ==100){
-        break
-    }
-console.log(num);
-}
 //2
-
-let array1= [1, 2, 4, -1, -3, 8, 7, 0, -5, 18, 12];
-
-for (let i =0; i < array1.length; i++){
-    const num = array1[i];
-    if (num > 0 && num < 10){
-        console.log(num);
-    }
-}
-
-for(let item of array1){
-    if (item > 0 && item<10) {
-        console.log(item);
-    }
-}
-
-
-
-//3
-let array2 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-for (let i = 0; i < array2.length; i++){
-    const element = array2[i];
-    if(element ==5){
-        console.log('aris');
-        break;
-    }
-}
- for(let item of array2){
-    if(item ==5){
-        console.log('aris');
-        break
-    }
- }
-//4
-let array3= [1, 2, 3, 4, 5];
-let sum = 0;
-for(let i = 0; i < array3.length; i++){
-    sum += array3[i];
-    console.log(sum);
-}
-
-//5
-let array4= [1, 2, 3, 4, 5];
-let sum1= 0;
-for(let i = 0; i < array4.length; i++){
-    sum1 += array4[i] 
-    console.log(sum1); 
-}  
-
- //6
- let array5 = [1, 2, 3, 7, 6, 9];
- for(let item of array5){
-    if(item == 7){
-        continue;
-        
-    }
-    console.log(item);
- }
-
-//7
 let user = {
-    firstname: "giorgi",
-    lastname: "smith",
-    age: 25,  
-    studentstatus: "active"
+    firstname: 'giorgi',
+    lastname: 'saakadze',
+    age: 32,
+    isloggedin: true
   };
-  console.log(user.studentstatus);
+function formatUserName(user) {
+    if (user.isloggedin) {
+      
+      return `${user.firstname} ${user.lastname}`;
+    } else {
+      
+      return false;
+    }
+  }
+
+  let result = formatUserName(user);
   
-  
-//8
-let user2 = {
-    name: 'anna',
-    age:  20,
-    studentstatus: 'active'
+  if (result) {
+    console.log(`Formatted Name: ${result}`);
+  } else {
+    console.log('user is not logged in.');
+  }
+//3
+const numbers1 = [1,4,5,6,20,45]
+
+const largestnumber = (values) => {
+    let  highest = 0;
+    for (let i=0; i<values.length; i+=1){
+        if (values[i] > highest){
+            highest = values[i];
+        }
+
+    }
+    return highest;
 }
-if( user2.age <18 && studentstatus =='active'){
-    console.log('hello user');
+console.log(largestnumber(numbers1));
+//5
+let numbers2 = [1,2,3,4,5]; 
+const newarr = numbers2.concat().reverse();
+console.log(numbers2);
+console.log(newarr);
+
+
+//4
+let number = 5 
+let reaminder = (number % 2)
+if (reaminder == 0){
+    console.log('{number} is even');
+} else{
+    console.log('{number} is odd');
 }
- else if( user2.name =='levani'){
-    console.log('hello levani');
+//6
+ const adult = (age) => {
+    return age >=19 ? 'სრულწლოვანი':'არასრულწლოვანი';
  }
- else if(user2.studentstatus == 'active' || user2.age < 25){
-    console.log('hello anna');
- }
- else{
-    console.log('error');
- }
- let result = user2.age < 18 && user2.studentstatus == 'active' ? 'hello user' : user2.name =='leavni' ? 'hello leavni' : user2.studentstatus = 'active' || user2.age < 25 ? 'hello anna' : 'error';
- console.log(result);
+ const adult1 = (60);
+ console.log(adult1);
  
-//9
-let array6 = [ 2, 3, 5, 10,25,24,11, 100 , 6,7, 10 ]
-
-for(let item of array6){
-    if(item % 2==0){
-        console.log(item);
-    }
-}
-//10
-let users = [
-    {username: 'giorgi', status: false},
-    {username: 'levani', status: false},
-    {username: 'anna', status: true}
-]
-for(let y of users){
-    if(y.status ==true){
-        console.log(y);
-    }
-}
-    //11
-    let array7 = [32, 14, 10, 'hello', null, '40', 50];
-
-    
-
-
-
