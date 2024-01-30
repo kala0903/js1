@@ -78,5 +78,5 @@ let filter = lang.filter((item => item.length > 3));
 console.log(filter);
 //15
 let worrds = ['madrid', 'rome', 'milan', 'berlin'];
- let m = worrds.filter((item => item.includes('m')));
- console.log(m);
+ let v = worrds.filter((item => item.includes('m')));
+ console.log(v);
