@@ -43,5 +43,5 @@ let  sum = unarray7.reduce((accumulator, currentvalue) => accumulator + currentv
 console.log(sum);
 //6
 let numbersarray = [1,2,3,4,2,6,7,2,4];
-let sum = numbersarray.reduce((acc,curr) => acc + curr);
-console.log(sum);
+let sum1 = numbersarray.reduce((acc,curr) => acc + curr);
+console.log(sum1);
