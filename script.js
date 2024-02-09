@@ -27,4 +27,4 @@ function getUsers () {
     request.send();
 }
 
-getUsers();
+getUser();
